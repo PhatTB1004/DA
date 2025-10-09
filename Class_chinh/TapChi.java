@@ -11,8 +11,8 @@ public class TapChi  extends Sach {
     public TapChi() {
         super();
     }
-    public TapChi(String maSach, String tenSach, String tacGia, String maTL, String maNXB, int soLuong, double donGia, int sophathanh, String chuyenmuc) {
-        super(maSach, tenSach, tacGia, maTL, maNXB, soLuong, donGia);
+    public TapChi(String masach, String tensach, String tacgia, String maTL, String maNXB, int soLuong, double donGia, int sophathanh, String chuyenmuc) {
+        super(masach, tensach, tacgia, maTL, maNXB, soLuong, donGia);
         this.sophathanh = sophathanh;
         this.chuyenmuc = chuyenmuc;
     }

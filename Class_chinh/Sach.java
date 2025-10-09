@@ -2,7 +2,7 @@ package Java.DoAn.Class_chinh;
 
 public class Sach {
     // Thuộc tính:
-    String maSach, tenSach, tacGia, maTL, maNXB;
+    String masach, tensach, tacgia, maTL, maNXB;
     int soLuong;
     double donGia;
 
@@ -11,19 +11,19 @@ public class Sach {
     //Hàm thiết lập:
     public Sach() {
     }
-    public Sach(String maSach, String tenSach, String tacGia, String maTL, String maNXB, int soLuong, double donGia) {
-        this.maSach = maSach;
-        this.tenSach = tenSach;
-        this.tacGia = tacGia;
+    public Sach(String masach, String tensach, String tacgia, String maTL, String maNXB, int soLuong, double donGia) {
+        this.masach = masach;
+        this.tensach = tensach;
+        this.tacgia = tacgia;
         this.maTL = maTL;
         this.maNXB = maNXB;
         this.soLuong = soLuong;
         this.donGia = donGia;
     }
     public Sach(Sach s) {
-        this.maSach = s.maSach;
-        this.tenSach = s.tenSach;
-        this.tacGia = s.tacGia;
+        this.masach = s.masach;
+        this.tensach = s.tensach;
+        this.tacgia = s.tacgia;
         this.maTL = s.maTL;
         this.maNXB = s.maNXB;
         this.soLuong = s.soLuong;
@@ -34,11 +34,11 @@ public class Sach {
     public void nhap() {
         java.util.Scanner sc = new java.util.Scanner(System.in);
         System.out.print("Nhap ma sach: ");
-        maSach = sc.nextLine();
+        masach = sc.nextLine();
         System.out.print("Nhap ten sach: ");
-        tenSach = sc.nextLine();
+        tensach = sc.nextLine();
         System.out.print("Nhap tac gia: ");
-        tacGia = sc.nextLine();
+        tacgia = sc.nextLine();
         System.out.print("Nhap ma the loai: ");
         maTL = sc.nextLine();
         System.out.print("Nhap ma nha xuat ban: ");
@@ -49,27 +49,27 @@ public class Sach {
         donGia = sc.nextDouble();
     }
     public void xuat() {
-        System.out.printf("%-10s %-20s %-20s %-10s %-10s %-10d %-10.2f\n", maSach, tenSach, tacGia, maTL, maNXB, soLuong, donGia);
+        System.out.printf("%-10s %-20s %-20s %-10s %-10s %-10d %-10.2f", masach, tensach, tacgia, maTL, maNXB, soLuong, donGia);
     }
 
     // Get, set:
     public String getMaSach() {
-        return maSach;
+        return masach;
     }
-    public void setMaSach(String maSach) {
-        this.maSach = maSach;
+    public void setMaSach(String masach) {
+        this.masach = masach;
     }
     public String getTenSach() {
-        return tenSach;
+        return tensach;
     }
-    public void setTenSach(String tenSach) {
-        this.tenSach = tenSach;
+    public void setTenSach(String tensach) {
+        this.tensach = tensach;
     }
     public String getTacGia() {
-        return tacGia;
+        return tacgia;
     }
-    public void setTacGia(String tacGia) {
-        this.tacGia = tacGia;
+    public void setTacGia(String tacgia) {
+        this.tacgia = tacgia;
     }
     public String getMaTL() {
         return maTL;

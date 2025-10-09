@@ -2,7 +2,7 @@ package Java.DoAn.Class_chinh;
 
 public class NhanVien {
     // Thuộc tính:
-    String manv, hoten, sdt, ngaysinh, gioitinh;
+    String manv, ho, ten, sdt, ngaysinh, gioitinh;
     double luong;
 
     // Phương thức:
@@ -10,9 +10,10 @@ public class NhanVien {
     //Hàm thiết lập:
     public NhanVien() {
     }
-    public NhanVien(String manv, String hoten, String sdt, String ngaysinh, String gioitinh, double luong) {
+    public NhanVien(String manv, String ho, String ten, String sdt, String ngaysinh, String gioitinh, double luong) {
         this.manv = manv;
-        this.hoten = hoten;
+        this.ho = ho;
+        this.ten = ten;
         this.sdt = sdt;
         this.ngaysinh = ngaysinh;
         this.gioitinh = gioitinh;
@@ -20,7 +21,8 @@ public class NhanVien {
     }
     public NhanVien(NhanVien n) {
         this.manv = n.manv;
-        this.hoten = n.hoten;
+        this.ho = n.ho;
+        this.ten = n.ten;
         this.sdt = n.sdt;
         this.ngaysinh = n.ngaysinh;
         this.gioitinh = n.gioitinh;
@@ -32,8 +34,10 @@ public class NhanVien {
         java.util.Scanner sc = new java.util.Scanner(System.in);
         System.out.print("Nhap ma nhan vien: ");
         manv = sc.nextLine();
-        System.out.print("Nhap ho ten: ");
-        hoten = sc.nextLine();
+        System.out.print("Nhap ho: ");
+        ho = sc.nextLine();
+        System.out.print("Nhap ten: ");
+        ten = sc.nextLine();
         System.out.print("Nhap so dien thoai: ");
         sdt = sc.nextLine();
         System.out.print("Nhap ngay sinh: ");
@@ -44,7 +48,7 @@ public class NhanVien {
         luong = sc.nextDouble();
     }
     public void xuat() {
-        System.out.printf("%-10s %-20s %-15s %-15s %-10s %-10.2f\n", manv, hoten, sdt, ngaysinh, gioitinh, luong);
+        System.out.printf("%-10s %-20s %-15s %-15s %-10s %-10.2f\n", manv, ho, ten, sdt, ngaysinh, gioitinh, luong);
     }
 
     // Get, set:
@@ -54,11 +58,17 @@ public class NhanVien {
     public void setMaNV(String manv) {
         this.manv = manv;
     }
-    public String getHoTen() {
-        return hoten;
+    public String getHo() {
+        return ho;
     }
-    public void setHoTen(String hoten) {
-        this.hoten = hoten;
+    public void setHo(String ho) {
+        this.ho = ho;
+    }
+    public String getTen() {
+        return ten;
+    }
+    public void setTen(String ten) {
+        this.ten = ten;
     }
     public String getSDT() {
         return sdt;

@@ -10,8 +10,8 @@ public class SachNuocNgoai extends Sach {
     public SachNuocNgoai() {
         super();
     }  
-    public SachNuocNgoai(String maSach, String tenSach, String tacGia, String maTL, String maNXB, int soLuong, double donGia, String ngonngu, String quocgia) {
-        super(maSach, tenSach, tacGia, maTL, maNXB, soLuong, donGia);
+    public SachNuocNgoai(String masach, String tensach, String tacgia, String maTL, String maNXB, int soLuong, double donGia, String ngonngu, String quocgia) {
+        super(masach, tensach, tacgia, maTL, maNXB, soLuong, donGia);
         this.ngonngu = ngonngu;
         this.quocgia = quocgia;
     }
