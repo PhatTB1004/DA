@@ -42,7 +42,7 @@ public class DSNV {
         }
     }
     public void xuatdsnv() {
-        System.out.printf("%-10s %-20s %-15s %-15s %-10s %-10s\n", "Ma NV", "Ho Ten", "SDT", "Ngay Sinh", "Gioi Tinh", "Luong");
+        System.out.printf("%-10s %-15s %-10s %-15s %-15s %-10s %-10s\n", "Ma NV", "Ho", "Ten", "SDT", "Ngay Sinh", "Gioi Tinh", "Luong");
         for (int i = 0; i < n; i++) {
             dsnv[i].xuat();
         }
@@ -107,6 +107,26 @@ public class DSNV {
         else System.out.println("Khong tim thay nhan vien nao co ho " + ho);
         return null;
     }
+    public NhanVien[] tim_tennv(String ten) {
+        NhanVien[] timten = new NhanVien[0];
+        int m=0;
+        for (int i = 0; i < n; i++) {
+            if (dsnv[i].getTen().contains(ten)) {
+                timten = Arrays.copyOf(timten, m + 1);
+                timten[m] = new NhanVien(dsnv[i]);
+                m++;
+            }
+        }
+        if (m > 0) {
+            System.out.println("Cac nhan vien co ten " + ten + ":");
+            for (int i = 0; i < m; i++) {
+                timten[i].xuat();
+            }
+            return timten;
+        }
+        else System.out.println("Khong tim thay nhan vien nao co ten " + ten);
+        return null;
+    }
 
     // xoa:
     public void xoanv() {
@@ -152,7 +172,7 @@ public class DSNV {
                 int choice = new java.util.Scanner(System.in).nextInt();
                 switch (choice) {
                     case 1:
-                        System.out.print("Nhap ho ten moi: ");
+                        System.out.print("Nhap ho moi: ");
                         String ho = new java.util.Scanner(System.in).nextLine();
                         dsnv[i].setHo(ho);
                         break;

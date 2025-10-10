@@ -48,7 +48,7 @@ public class NhanVien {
         luong = sc.nextDouble();
     }
     public void xuat() {
-        System.out.printf("%-10s %-20s %-15s %-15s %-10s %-10.2f\n", manv, ho, ten, sdt, ngaysinh, gioitinh, luong);
+        System.out.printf("%-10s %-15s %-10s %-15s %-15s %-10s %-10.2f\n", manv, ho, ten, sdt, ngaysinh, gioitinh, luong);
     }
 
     // Get, set:
