@@ -170,42 +170,43 @@ public class DSNV {
                 System.out.println("0. Thoat");
                 System.out.print("Nhap lua chon: ");
                 int choice = new java.util.Scanner(System.in).nextInt();
-                switch (choice) {
-                    case 1:
-                        System.out.print("Nhap ho moi: ");
-                        String ho = new java.util.Scanner(System.in).nextLine();
-                        dsnv[i].setHo(ho);
-                        break;
-                    case 2:
-                        System.out.print("Nhap ten moi: ");
-                        String ten = new java.util.Scanner(System.in).nextLine();
-                        dsnv[i].setTen(ten);
-                        break;
-                    case 3:
-                        System.out.print("Nhap SDT moi: ");
-                        String sdt = new java.util.Scanner(System.in).nextLine();
-                        dsnv[i].setSDT(sdt);
-                        break;
-                    case 4:
-                        System.out.print("Nhap ngay sinh moi: ");
-                        String ngaysinh = new java.util.Scanner(System.in).nextLine();
-                        dsnv[i].setNgaySinh(ngaysinh);
-                        break;
-                    case 5:
-                        System.out.print("Nhap gioi tinh moi: ");
-                        String gioitinh = new java.util.Scanner(System.in).nextLine();
-                        dsnv[i].setGioiTinh(gioitinh);
-                        break;
-                    case 6:
-                        System.out.print("Nhap luong moi: ");
-                        double luong = new java.util.Scanner(System.in).nextDouble();
-                        dsnv[i].setLuong(luong);
-                        break;
+                do {
+                    switch (choice) {
+                        case 1:
+                            System.out.print("Nhap ho moi: ");
+                            String ho = new java.util.Scanner(System.in).nextLine();
+                            dsnv[i].setHo(ho);
+                            break;
+                        case 2:
+                            System.out.print("Nhap ten moi: ");
+                            String ten = new java.util.Scanner(System.in).nextLine();
+                            dsnv[i].setTen(ten);
+                            break;
+                        case 3:
+                            System.out.print("Nhap SDT moi: ");
+                            String sdt = new java.util.Scanner(System.in).nextLine();
+                            dsnv[i].setSDT(sdt);
+                            break;
+                        case 4:
+                            System.out.print("Nhap ngay sinh moi: ");
+                            String ngaysinh = new java.util.Scanner(System.in).nextLine();
+                            dsnv[i].setNgaySinh(ngaysinh);
+                            break;
+                        case 5:
+                            System.out.print("Nhap gioi tinh moi: ");
+                            String gioitinh = new java.util.Scanner(System.in).nextLine();
+                            dsnv[i].setGioiTinh(gioitinh);
+                            break;
+                        case 6:
+                            System.out.print("Nhap luong moi: ");
+                            double luong = new java.util.Scanner(System.in).nextDouble();
+                            dsnv[i].setLuong(luong);
+                            break;
+                    } 
                 } while (choice != 0);
                 return;
             }
         }
         System.out.println("Khong tim thay nhan vien co ma " + manv);
     }
-
 }
